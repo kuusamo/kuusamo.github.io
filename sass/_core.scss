@@ -1,0 +1,34 @@
+$secondaryColour: #ee3364;
+$tertiaryColour: #17191b;
+
+a.btn {
+    background-color: $secondaryColour;
+    display: inline-block;
+    padding: 12px 24px;
+
+    &:link, &:visited {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    &:hover, &:active {
+        background-color: darken($secondaryColour, 10%);
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+code {
+    background-color: $tertiaryColour;
+    display: block;
+    padding: 24px;
+}
+
+img {
+    max-width: 100%;
+}
+
+p, code {
+    line-height: 150%;
+    margin: 24px 0;
+}

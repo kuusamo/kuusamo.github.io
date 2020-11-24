@@ -1,0 +1,66 @@
+@use '_core' as *;
+
+%wrapper {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.bg1 {
+    background: radial-gradient(circle, #283742 0%, #394d5d 100%);
+}
+
+.bg2 {
+    background: radial-gradient(circle, #3b5162 0%, #283742 100%);
+}
+
+.bg3 {
+    background-color: $tertiaryColour;
+}
+
+body {
+    background: rgb(56,76,92);
+    color: #fff;
+    font-family: "Muli", helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+footer {
+    @extend %wrapper;
+    padding: 48px;
+    text-align: center;
+}
+
+header {
+    @extend %wrapper;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Montserrat";
+    font-weight: bold;
+    padding: 24px;
+
+    h1 {
+        font-size: 300%;
+        margin: 0;
+    }
+}
+
+section {
+    @extend %wrapper;
+    padding: 24px;
+    padding-bottom: 48px;
+    min-height: 300px;
+
+    h2 {
+        font-size: 200%;
+        line-height: 100%;
+        margin-top: 0;
+        margin-bottom: 36px;
+    }
+
+    h2::after {
+        color: $secondaryColour;
+        content: ".";
+        font-size: 200%;
+    }
+}
